@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cyber">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhishek Chaudhary | B.Tech CSE @ BIET Jhansi | 3D Futuristic Portfolio</title>
+  
+  <!-- SEO & Meta -->
+  <meta name="description" content="Cinematic dark 3D personal portfolio of Abhishek Chaudhary, Computer Science student at BIET Jhansi. Passionate about software development, C, C++, and modern web technologies.">
+  <meta name="author" content="Abhishek Chaudhary">
+  <meta name="keywords" content="Abhishek Chaudhary, BIET Jhansi, CSE, Software Developer, 3D Portfolio, C, C++, Web Development, JavaScript">
+
+  <!-- Google Fonts: Space Grotesk, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Spline 3D Viewer Script (100% Free interactive 3D WebGL Embeds) -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@latest/build/spline-viewer.js"></script>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Background Particle Canvas & Ambient Cyber Grid Overlay -->
+  <canvas id="particle-canvas"></canvas>
+  <div class="cyber-grid-overlay"></div>
+
+  <!-- Custom Glowing Aura Cursor (as seen in viral reference video) -->
+  <div class="cursor-aura"></div>
+  <div class="cursor-dot"></div>
+
+  <!-- Fixed Left Social Dock (matching reference video) -->
+  <aside class="fixed-social-dock" aria-label="Social Links">
+    <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+    </a>
+    <a href="mailto:abhishek.chaudhary@example.com" title="Send Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <a href="https://leetcode.com/your-username" target="_blank" rel="noopener noreferrer" title="Coding Profile">
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+    </a>
+  </aside>
+
+  <!-- Top Navigation Header -->
+  <header class="site-header">
+    <!-- Brand Logo -->
+    <a href="#hero" class="brand-logo">
+      <div class="logo-badge">&lt;AC /&gt;</div>
+      <div class="logo-text"><span>ABHISHEK</span></div>
+    </a>
+
+    <!-- Center Pill (as seen in reference video) -->
+    <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" class="header-center-pill">
+      <span class="live-dot"></span>
+      <span>linkedin.com/in/abhishek-chaudhary</span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+    </a>
+
+    <!-- Navigation Links -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#education" class="nav-link">EDUCATION</a></li>
+        <li><a href="#projects" class="nav-link">WORK</a></li>
+        <li><a href="#tech-stack" class="nav-link">SKILLS</a></li>
+        <li><a href="#journey" class="nav-link">JOURNEY</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+    </nav>
+
+    <!-- Header Actions (Theme Switcher, Sound FX, Resume Button & Mobile Toggle) -->
+    <div class="header-actions">
+      <!-- Neon Theme Accent Switcher -->
+      <button id="theme-switch-btn" class="btn-icon" title="Switch Cyber Glow Color">
+        🎨
+      </button>
+
+      <!-- Web Audio Synth FX Toggle -->
+      <button id="sound-toggle-btn" class="btn-icon" title="Toggle Cyber Sound Effects">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>
+      </button>
+
+      <!-- Resume Trigger -->
+      <a href="#resume" class="btn-resume-nav trigger-resume-modal">
+        <span>RESUME</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </a>
+
+      <!-- Mobile Hamburger -->
+      <button class="mobile-nav-toggle" aria-label="Toggle Navigation Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section (Matching 00:00 - 00:04 of Video)
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-grid">
+        
+        <!-- Hero Left Column -->
+        <div class="hero-left">
+          <div class="hero-badge-pill">
+            <span class="pulse-indicator"></span>
+            <span>B.Tech CSE @ BIET Jhansi</span>
+          </div>
+
+          <div class="hero-greeting">HELLO! I'M</div>
+          
+          <h1 class="hero-name">
+            ABHISHEK
+            <span class="gradient-text">CHAUDHARY</span>
+          </h1>
+
+          <div class="hero-role-wrapper">
+            <span id="hero-typed-text"></span>
+            <span class="typed-cursor">|</span>
+          </div>
+
+          <p class="hero-bio">
+            Computer Science &amp; Engineering undergraduate at <strong>Bundelkhand Institute of Engineering &amp; Technology (BIET) Jhansi</strong>. Passionate about software development, systems programming in C, algorithmic problem solving, and building responsive, high-utility web applications.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-primary">
+              <span>View Projects</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+
+            <a href="#resume" class="btn-secondary trigger-resume-modal">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Hero Center Column: 3D Holographic Developer Avatar & Spline 3D Scene -->
+        <div class="hero-center">
+          <!-- 3D Mode Selector Pills -->
+          <div class="avatar-mode-bar">
+            <button class="mode-pill active" id="btn-mode-hologram" title="Show 3D Holographic Avatar">⚡ Hologram</button>
+            <button class="mode-pill" id="btn-mode-spline" title="Show Live Spline 3D Scene">🌐 Live Spline 3D</button>
+            <button class="mode-pill mode-pill-ai trigger-ai-studio" title="Open 3D AI Prompt Studio">✨ AI 3D Studio</button>
+          </div>
+
+          <!-- View 1: 3D Holographic Tilt Card (Default) -->
+          <div class="avatar-3d-card" id="view-hologram-card">
+            <div class="avatar-ambient-glow"></div>
+            
+            <div class="avatar-interactive-wrapper">
+              <!-- Floating Hologram Badges -->
+              <div class="float-badge badge-top-left">&lt;C /&gt; Core</div>
+              <div class="float-badge badge-bottom-right">C++ [Learning]</div>
+
+              <div class="avatar-image-frame">
+                <!-- Displays 3D Avatar (User can also upload their photo as assets/profile.jpg) -->
+                <img src="assets/avatar.svg" alt="Abhishek Chaudhary 3D Developer Avatar" id="profile-avatar-img">
+              </div>
+            </div>
+          </div>
+
+          <!-- View 2: Live Spline 3D Interactive WebGL Scene (Hidden until toggled) -->
+          <div class="spline-3d-wrapper" id="view-spline-card" style="display: none;">
+            <div class="spline-overlay-instructions">🖱️ Drag to rotate 3D model 360°</div>
+            <!-- Free Spline 3D futuristic developer robot scene -->
+            <spline-viewer id="hero-spline-viewer" url="https://prod.spline.design/6Wq1Q7YGyM-iab9i/scene.splinecode"></spline-viewer>
+          </div>
+        </div>
+
+        <!-- Hero Right Column (Matching video right typography) -->
+        <div class="hero-right">
+          <div class="hero-right-title">Specialization</div>
+          <div class="hero-right-skills">
+            <div>SOFTWARE</div>
+            <div class="highlight-cyan">DEVELOPMENT</div>
+            <div class="highlight-purple">&amp; SYSTEMS</div>
+          </div>
+
+          <div class="hero-quick-stats">
+            <div class="stat-item">
+              <div class="stat-icon">🏛️</div>
+              <span>Autonomous Govt. Engineering Institute</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">⚡</div>
+              <span>Focus on Data Structures &amp; Clean Code</span>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">🎯</div>
+              <span>Actively expanding into C++ &amp; Algorithms</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Me Section (Matching 00:05 - 00:07 of Video)
+         ========================================================================== -->
+    <section id="about" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 01. WHO AM I</span>
+        <h2 class="section-title">ABOUT ME</h2>
+        <p class="section-subtitle">
+          Engineering solutions from first principles, bridging low-level computation with modern web interfaces.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <!-- About Left Card: Narrative & Bio -->
+        <div class="about-left-card">
+          <h3 class="about-section-heading">My Engineering Journey</h3>
+          <p class="about-text">
+            I am a B.Tech Computer Science and Engineering student at <strong>Bundelkhand Institute of Engineering &amp; Technology (BIET) Jhansi</strong>. My passion lies in software development, understanding how systems execute beneath the hood, and crafting practical tools that solve real problems.
+          </p>
+          <p class="about-text">
+            Starting with the foundational rigor of <strong>C programming</strong>, I developed deep appreciation for memory allocation, pointers, and algorithmic structures. I build responsive web experiences using <strong>HTML5, CSS3, and JavaScript</strong>, while continuously advancing into <strong>C++ and Object-Oriented Design</strong>.
+          </p>
+
+          <ul class="about-key-points">
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Institution:</strong> BIET Jhansi (CSE Department)</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Mindset:</strong> Continuous hands-on building &amp; problem solving</span>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span><strong>Goal:</strong> Building scalable, reliable &amp; useful software</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- About Center: 3D Workstation Scene (Matching Video 00:06) -->
+        <div class="about-center-scene">
+          <div class="workstation-visual-wrapper">
+            <img src="assets/3d-desk.svg" alt="3D Developer Workstation at BIET Jhansi">
+          </div>
+        </div>
+
+        <!-- About Right: "WHAT I DO" Service Cards (Matching Video 00:07) -->
+        <div class="about-right-services">
+          <div class="service-card">
+            <div class="service-title">
+              CORE SYSTEMS &amp; C
+              <span>[Low-Level]</span>
+            </div>
+            <p class="service-desc">
+              Strong grasp of pointers, dynamic memory management, file handling, and structured procedural programming.
+            </p>
+            <div class="service-tech-tags">
+              <span>C Language</span>
+              <span>Memory Alloc</span>
+              <span>File I/O</span>
+              <span>CLI Apps</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-title">
+              MODERN WEB DEV
+              <span>[Frontend]</span>
+            </div>
+            <p class="service-desc">
+              Building responsive, semantic, and interactive web interfaces with modern styling and clean client-side logic.
+            </p>
+            <div class="service-tech-tags">
+              <span>HTML5</span>
+              <span>CSS3 / Grid</span>
+              <span>JavaScript ES6+</span>
+              <span>DOM APIs</span>
+            </div>
+          </div>
+
+          <div class="service-card">
+            <div class="service-title">
+              ALGORITHMS &amp; C++
+              <span>[In Progress]</span>
+            </div>
+            <p class="service-desc">
+              Actively mastering Object-Oriented Programming (OOP) paradigms, STL containers, and algorithmic problem solving.
+            </p>
+            <div class="service-tech-tags">
+              <span>C++ (Learning)</span>
+              <span>OOPs Concepts</span>
+              <span>Data Structures</span>
+              <span>Logic</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bonus Interactive Developer Terminal -->
+      <div class="cyber-terminal-card">
+        <div class="terminal-bar">
+          <div class="terminal-dots">
+            <span class="mockup-dot red"></span>
+            <span class="mockup-dot yellow"></span>
+            <span class="mockup-dot green"></span>
+          </div>
+          <div class="terminal-title">abhishek@biet-jhansi:~ (Interactive CLI)</div>
+          <div class="terminal-actions">
+            <button class="terminal-cmd-btn" data-cmd="whoami">whoami</button>
+            <button class="terminal-cmd-btn" data-cmd="skills">skills</button>
+            <button class="terminal-cmd-btn" data-cmd="biet">biet</button>
+            <button class="terminal-cmd-btn" data-cmd="clear">clear</button>
+          </div>
+        </div>
+        <div class="terminal-output" id="terminal-screen">
+          <div class="terminal-line"><span class="t-prompt">abhishek@biet-jhansi:~$</span> <span class="t-cmd">whoami</span></div>
+          <div class="terminal-line t-response">&gt; Abhishek Chaudhary — B.Tech Computer Science &amp; Engineering Student at BIET Jhansi.</div>
+          <div class="terminal-line t-response">&gt; Passionate about C/C++, Data Structures, and Building Functional Web Tech.</div>
+          <div class="terminal-line"><span class="t-prompt">abhishek@biet-jhansi:~$</span> <span class="t-cursor">_</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Education & Learning Section (Matching 00:08 - 00:09 of Video)
+         ========================================================================== -->
+    <section id="education" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 02. ACADEMIC FOUNDATION</span>
+        <h2 class="section-title">My Education &amp; Learning</h2>
+        <p class="section-subtitle">
+          Formal academic training at BIET Jhansi combined with disciplined self-directed engineering exploration.
+        </p>
+      </div>
+
+      <div class="education-container">
+        
+        <!-- Milestone 1: BIET Jhansi CSE -->
+        <div class="education-timeline-card">
+          <div class="edu-time-badge">
+            <div class="edu-year">2023 – 2027</div>
+            <span class="edu-status-pill">● Current Degree</span>
+          </div>
+
+          <div class="edu-details">
+            <h3 class="edu-degree">Bachelor of Technology (B.Tech) — Computer Science &amp; Engineering</h3>
+            <div class="edu-college">Bundelkhand Institute of Engineering &amp; Technology (BIET), Jhansi</div>
+            <p class="edu-description">
+              Undergraduate studies focusing on core computational sciences: Data Structures &amp; Algorithms, Computer Architecture, Discrete Mathematics, Operating Systems, and Object-Oriented Systems. Active member of technical circles and problem-solving groups.
+            </p>
+            <div class="edu-highlights">
+              <span>Data Structures</span>
+              <span>C &amp; C++ Programming</span>
+              <span>Computer Architecture</span>
+              <span>DBMS Basics</span>
+              <span>Discrete Math</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 2: Senior Secondary -->
+        <div class="education-timeline-card">
+          <div class="edu-time-badge">
+            <div class="edu-year">Class XII</div>
+            <span class="edu-status-pill">Completed</span>
+          </div>
+
+          <div class="edu-details">
+            <h3 class="edu-degree">Senior Secondary Education (PCM — Science &amp; Mathematics)</h3>
+            <div class="edu-college">[Your School / College Name Placeholder]</div>
+            <p class="edu-description">
+              Rigorous foundation in Physics, Chemistry, and Advanced Mathematics, developing strong analytical thinking, logical deduction, and quantitative problem-solving skills.
+            </p>
+            <div class="edu-highlights">
+              <span>Physics</span>
+              <span>Chemistry</span>
+              <span>Advanced Mathematics</span>
+              <span>Logical Analysis</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Milestone 3: High School -->
+        <div class="education-timeline-card">
+          <div class="edu-time-badge">
+            <div class="edu-year">Class X</div>
+            <span class="edu-status-pill">Completed</span>
+          </div>
+
+          <div class="edu-details">
+            <h3 class="edu-degree">Secondary School Certificate</h3>
+            <div class="edu-college">[Your High School Name Placeholder]</div>
+            <p class="edu-description">
+              Completed foundational education with distinction in Science and Mathematics, sparking the curiosity to pursue Computer Science and software engineering.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Gallery (Projects - Matching 00:10 - 00:16 of Video)
+         ========================================================================== -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 03. CODE REPOSITORIES &amp; CREATIONS</span>
+        <h2 class="section-title">Featured Gallery</h2>
+        <p class="section-subtitle">
+          A curated collection of practical web applications, algorithmic utilities, and systems code.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Applications</button>
+        <button class="filter-btn" data-filter="c-systems">C &amp; Systems</button>
+        <button class="filter-btn" data-filter="algorithms">Algorithms</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+        
+        <!-- Project 1: Interactive Algorithm Visualizer -->
+        <div class="project-card" data-category="algorithms">
+          <div class="project-screen-mockup">
+            <div class="mockup-header-bar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-url-pill">algorithm-visualizer.local</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-icon-badge">📊</div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-category">Algorithms &bull; Web Canvas</div>
+            <h3 class="project-title">Interactive Sorting &amp; Search Visualizer</h3>
+            <p class="project-description">
+              A dynamic interactive web visualizer built in pure JavaScript that demonstrates Bubble, Insertion, Selection, and Quick Sort algorithms in real-time with step controls, speed adjustments, and audio frequency feedback.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript ES6+</span>
+              <span>Canvas API</span>
+              <span>CSS Grid</span>
+              <span>Algorithms</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-project-view trigger-project-modal" 
+                data-project-title="Interactive Sorting &amp; Search Visualizer"
+                data-project-desc="Built to intuitively understand algorithmic time and space complexities. Features step-by-step playback, customizable array generation, comparisons counter, and interactive swap telemetry."
+                data-project-tech="JavaScript (ES6+), HTML5 Canvas, CSS Animations, Web Audio API">
+                Quick View
+              </button>
+              <a href="https://github.com/your-username/sorting-visualizer" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View Source on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: C-Based Data Record Management Utility -->
+        <div class="project-card" data-category="c-systems">
+          <div class="project-screen-mockup">
+            <div class="mockup-header-bar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-url-pill">terminal@biet:~/c-data-utility</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-icon-badge">&gt;_</div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-category">C Language &bull; Systems</div>
+            <h3 class="project-title">C Record Management &amp; File Engine</h3>
+            <p class="project-description">
+              A high-efficiency command-line utility built in C utilizing dynamic memory allocation, structs, and binary file streams to index, search, sort, and persist institutional records with zero memory leaks.
+            </p>
+            <div class="project-tags">
+              <span>C Programming</span>
+              <span>Pointers &amp; Malloc</span>
+              <span>File Handling</span>
+              <span>Binary Streams</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-project-view trigger-project-modal" 
+                data-project-title="C Record Management &amp; File Engine"
+                data-project-desc="Engineered in pure C to practice robust memory safety with Valgrind checks, custom error handling, and binary serialization for persistent storage on disk."
+                data-project-tech="C Language, GCC Compiler, Binary File I/O, Structs &amp; Linked Lists">
+                Quick View
+              </button>
+              <a href="https://github.com/your-username/c-record-manager" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View Source on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Responsive Developer Showcase Hub -->
+        <div class="project-card" data-category="web">
+          <div class="project-screen-mockup">
+            <div class="mockup-header-bar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-url-pill">portfolio-v1.app</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-icon-badge">&lt;/&gt;</div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-category">Frontend &bull; Modern UI</div>
+            <h3 class="project-title">Responsive Tech Portal &amp; Showcase</h3>
+            <p class="project-description">
+              A high-performance personal web platform crafted with modern semantic HTML5, CSS3 glassmorphism, responsive CSS grid/flexbox architectures, and fluid animations for seamless viewing on all mobile and desktop devices.
+            </p>
+            <div class="project-tags">
+              <span>HTML5 Semantic</span>
+              <span>CSS3 Glassmorphism</span>
+              <span>JavaScript</span>
+              <span>Mobile-First</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-project-view trigger-project-modal" 
+                data-project-title="Responsive Tech Portal &amp; Showcase"
+                data-project-desc="Focused on 100% responsive design, accessibility (WCAG), CSS variables theming, and zero-dependency vanilla JavaScript performance."
+                data-project-tech="HTML5, CSS3 Variables, ES6 JavaScript, Web Standards">
+                Quick View
+              </button>
+              <a href="https://github.com/your-username/dev-portal" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View Source on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4: Student Task & Productivity Dashboard -->
+        <div class="project-card" data-category="web">
+          <div class="project-screen-mockup">
+            <div class="mockup-header-bar">
+              <span class="mockup-dot red"></span>
+              <span class="mockup-dot yellow"></span>
+              <span class="mockup-dot green"></span>
+              <span class="mockup-url-pill">task-tracker.dev</span>
+            </div>
+            <div class="mockup-content">
+              <div class="mockup-icon-badge">⚡</div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <div class="project-category">Web Apps &bull; Local Storage</div>
+            <h3 class="project-title">Student Workflow &amp; Task Matrix</h3>
+            <p class="project-description">
+              A streamlined student productivity application featuring course category tagging, local storage persistence, priority filters, and progress metrics designed specifically for engineering study schedules.
+            </p>
+            <div class="project-tags">
+              <span>JavaScript</span>
+              <span>Web Storage API</span>
+              <span>CSS Flexbox</span>
+              <span>Productivity</span>
+            </div>
+
+            <div class="project-actions">
+              <button class="btn-project-view trigger-project-modal" 
+                data-project-title="Student Workflow &amp; Task Matrix"
+                data-project-desc="Empowers engineering students to organize semester coursework, lab assignments, and competitive programming goals with persistent browser storage and clean telemetry."
+                data-project-tech="JavaScript ES6, Web Storage API, DOM Manipulation, CSS3">
+                Quick View
+              </button>
+              <a href="https://github.com/your-username/student-task-matrix" target="_blank" rel="noopener noreferrer" class="btn-project-github" title="View Source on GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         MY TECH STACK (Physics Ball Arena - Matching 00:17 - 00:20 of Video)
+         ========================================================================== -->
+    <section id="tech-stack" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 04. INTERACTIVE PHYSICS ARENA</span>
+        <h2 class="section-title">MY TECH STACK</h2>
+        <p class="section-subtitle">
+          Interactive 3D physics spheres representing my core technologies. Drag, throw, or swat them with your cursor!
+        </p>
+      </div>
+
+      <!-- Physics Ball Pit Arena -->
+      <div class="tech-stack-arena-wrapper">
+        <div class="arena-top-bar">
+          <div class="arena-title-info">
+            <h3>Physics Playground</h3>
+            <span class="arena-instruction-pill">Interactive Physics &bull; Drag &amp; Throw</span>
+          </div>
+          <button id="shake-balls-btn" class="btn-shake-arena">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+            <span>Shake Balls</span>
+          </button>
+        </div>
+
+        <div id="tech-balls-container"></div>
+      </div>
+
+      <!-- Structured Technical Breakdown Grid -->
+      <div class="skills-detail-grid">
+        
+        <!-- Programming Languages -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">💻</div>
+            <h4>Languages</h4>
+          </div>
+          <div class="skill-list-items">
+            <!-- C -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">C Programming</span>
+                <span class="skill-badge-tag">Proficient / Core</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- C++ (Marked as Learning/In Progress per user instruction) -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">C++</span>
+                <span class="skill-badge-tag skill-badge-learning">⚡ Learning / In Progress</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill learning" style="width: 55%;"></div>
+              </div>
+            </div>
+
+            <!-- JavaScript -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">JavaScript (ES6+)</span>
+                <span class="skill-badge-tag">Intermediate</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 78%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">🌐</div>
+            <h4>Web Technologies</h4>
+          </div>
+          <div class="skill-list-items">
+            <!-- HTML5 -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">HTML5</span>
+                <span class="skill-badge-tag">Semantic &amp; Standards</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- CSS3 -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">CSS3 / Grid / Flexbox</span>
+                <span class="skill-badge-tag">Animations &amp; Layouts</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <!-- Responsive Design -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">Responsive Mobile-First</span>
+                <span class="skill-badge-tag">Cross-Platform</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core CS & Tools -->
+        <div class="skill-category-card">
+          <div class="skill-card-header">
+            <div class="skill-card-icon">🛠️</div>
+            <h4>CS Core &amp; Tools</h4>
+          </div>
+          <div class="skill-list-items">
+            <!-- Data Structures -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">Data Structures &amp; Algorithms</span>
+                <span class="skill-badge-tag">Foundational</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+
+            <!-- Git & GitHub -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">Git &amp; GitHub</span>
+                <span class="skill-badge-tag">Version Control</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+            </div>
+
+            <!-- Problem Solving -->
+            <div class="skill-bar-row">
+              <div class="skill-bar-info">
+                <span class="skill-bar-name">Algorithmic Problem Solving</span>
+                <span class="skill-badge-tag">Active Practice</span>
+              </div>
+              <div class="skill-progress-track">
+                <div class="skill-progress-fill" style="width: 72%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Achievements & Coding Journey
+         ========================================================================== -->
+    <section id="journey" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 05. MILESTONES &amp; ROADMAP</span>
+        <h2 class="section-title">Achievements &amp; Coding Journey</h2>
+        <p class="section-subtitle">
+          Real milestones marking my growth as a Computer Science student and software engineer.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Bento 1: BIET Jhansi CSE Admission -->
+        <div class="bento-card span-2">
+          <div class="bento-icon-box">🏛️</div>
+          <h4>Admitted to B.Tech CSE @ BIET Jhansi</h4>
+          <p>
+            Secured admission into the premier autonomous government engineering college in Uttar Pradesh — Bundelkhand Institute of Engineering &amp; Technology, Jhansi, joining the prestigious Computer Science &amp; Engineering department.
+          </p>
+          <div class="bento-meta">ACADEMIC EXCELLENCE &bull; BIET JHANSI</div>
+        </div>
+
+        <!-- Bento 2: Problem Solving Practice -->
+        <div class="bento-card">
+          <div class="bento-icon-box">⚡</div>
+          <h4>Problem Solving &amp; DSA</h4>
+          <p>
+            Active coding on LeetCode and HackerRank, sharpening knowledge of arrays, strings, recursion, searching, and sorting algorithms.
+          </p>
+          <div class="bento-meta">CODING PLATFORMS &bull; [ADD HANDLE]</div>
+        </div>
+
+        <!-- Bento 3: Tech Fest & College Hackathons -->
+        <div class="bento-card">
+          <div class="bento-icon-box">🏆</div>
+          <h4>College Tech Fests &amp; Events</h4>
+          <p>
+            Active participation in institutional coding competitions, algorithmic challenges, and departmental tech events at BIET Jhansi.
+          </p>
+          <div class="bento-meta">COMPETITIVE CODING &bull; PARTICIPANT</div>
+        </div>
+
+        <!-- Bento 4: Open Source & Code Building -->
+        <div class="bento-card span-2">
+          <div class="bento-icon-box">🚀</div>
+          <h4>Hands-on Code Building &amp; Version Control</h4>
+          <p>
+            Committed to continuous learning by building practical software from scratch, maintaining Git repositories, writing clean documentation, and exploring modern developer workflows.
+          </p>
+          <div class="bento-meta">GITHUB OPEN SOURCE &bull; DEV PHILOSOPHY</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section & Footer (Matching 00:21 - 00:23 of Video)
+         ========================================================================== -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-tag">// 06. INITIATE TRANSMISSION</span>
+        <h2 class="section-title">CONTACT</h2>
+        <p class="section-subtitle">
+          Interested in software development, collaborative projects, or internship opportunities? Reach out below!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Left: Contact Details -->
+        <div class="contact-info-card">
+          <!-- Item 1: Email -->
+          <div class="contact-quick-item">
+            <div class="contact-quick-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div class="contact-quick-content">
+              <h5>Email Address</h5>
+              <p>abhishek.chaudhary@example.com</p>
+              <div class="contact-email-copy-box">
+                <button id="copy-email-btn" class="btn-copy-email">📋 Copy Email</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Location -->
+          <div class="contact-quick-item">
+            <div class="contact-quick-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-quick-content">
+              <h5>Location &amp; Campus</h5>
+              <p>BIET Jhansi Campus, Kanpur Road, Jhansi, Uttar Pradesh, India</p>
+            </div>
+          </div>
+
+          <!-- Item 3: Social Profiles -->
+          <div class="contact-quick-item">
+            <div class="contact-quick-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <div class="contact-quick-content">
+              <h5>Professional Profiles</h5>
+              <p>
+                <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" style="color: var(--accent-cyan); text-decoration: none; margin-right: 12px;">GitHub &rarr;</a>
+                <a href="https://linkedin.com/in/your-username" target="_blank" rel="noopener noreferrer" style="color: var(--accent-purple); text-decoration: none;">LinkedIn &rarr;</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Futuristic Message Dispatch Form -->
+        <div class="contact-form-card">
+          <form id="portfolio-contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name">YOUR NAME</label>
+              <input type="text" id="contact-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">YOUR EMAIL</label>
+              <input type="email" id="contact-email" class="form-input" placeholder="name@domain.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">SUBJECT</label>
+              <input type="text" id="contact-subject" class="form-input" placeholder="Internship, Project Collaboration, or Query" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">MESSAGE</label>
+              <textarea id="contact-message" class="form-textarea" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width: 100%;">
+              <span>Transmit Message</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Site Footer (Matching 00:21 - 00:23 of Video)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-copy">
+          Designed and Developed for <strong>Abhishek Chaudhary</strong> &bull; B.Tech CSE @ BIET Jhansi &copy; 2026
+        </p>
+        <p style="font-size: 0.78rem; color: var(--text-faint); font-family: var(--font-mono);">
+          [SYSTEM STATUS: ONLINE &bull; READY FOR NEW OPPORTUNITIES]
+        </p>
+      </div>
+
+      <div class="footer-right">
+        <div id="live-clock" class="footer-clock">00:00:00 [IST]</div>
+        <button id="back-to-top-btn" class="btn-back-to-top" title="Back to top">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Modals: Resume, AI 3D Studio & Project Quick View
+       ========================================================================== -->
+  
+  <!-- 1. Resume Preview Modal -->
+  <div id="resume-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resume-modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <h3 id="resume-modal-title" style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem;">
+        Abhishek Chaudhary — Curriculum Vitae
+      </h3>
+      <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 1.5rem;">
+        B.Tech Computer Science &amp; Engineering &bull; BIET Jhansi (2023–2027)
+      </p>
+
+      <div style="background: rgba(10, 10, 20, 0.75); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.5rem; margin-bottom: 1.5rem;">
+        <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 0.5rem;">Resume Summary</h4>
+        <p style="font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 1rem;">
+          Undergraduate CSE student at Bundelkhand Institute of Engineering &amp; Technology (BIET) Jhansi. Proficient in C programming and modern Web technologies (HTML, CSS, JavaScript), actively learning C++ &amp; Advanced Data Structures.
+        </p>
+        <div style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);">
+          &bull; <strong>Degree:</strong> B.Tech in CSE (2023–2027)<br>
+          &bull; <strong>Core Skills:</strong> C, HTML5, CSS3, JavaScript, C++ (Learning), Git<br>
+          &bull; <strong>Email:</strong> abhishek.chaudhary@example.com
+        </div>
+      </div>
+
+      <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+        <!-- Download Standalone PDF Resume -->
+        <a href="assets/resume.pdf" download="Abhishek_Chaudhary_Resume.pdf" class="btn-primary" style="text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          <span>Download PDF Resume</span>
+        </a>
+        <!-- View / Print Interactive CV -->
+        <a href="assets/resume.html" target="_blank" class="btn-secondary" style="text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span>View / Print Interactive CV</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. AI 3D Studio & Model Configurator Modal (Everything suggested in chat!) -->
+  <div id="ai-studio-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-dialog" style="max-width: 780px;">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <h3 style="font-family: var(--font-heading); font-size: 1.6rem; color: #fff; margin-bottom: 0.4rem;">
+        ✨ 3D AI Studio &amp; Asset Configurator
+      </h3>
+      <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.85rem; margin-bottom: 1.5rem;">
+        Free AI tools, copy-paste prompts, and live 3D scene customizer.
+      </p>
+
+      <!-- Section A: Live 3D Scene / Avatar Tester -->
+      <div style="background: rgba(14, 14, 26, 0.85); border: 1px solid var(--border-glow-purple); border-radius: var(--radius-md); padding: 1.4rem; margin-bottom: 1.5rem;">
+        <h4 style="color: #fff; font-size: 1.05rem; margin-bottom: 0.5rem;">Live Test Any 3D Spline or Image URL</h4>
+        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1rem;">
+          Paste your own Spline 3D `.splinecode` export URL or any image URL to test it live on the portfolio right now:
+        </p>
+        <div style="display: flex; gap: 8px;">
+          <input type="text" id="custom-3d-url-input" class="form-input" placeholder="e.g. https://prod.spline.design/.../scene.splinecode or image link" style="font-size: 0.85rem;">
+          <button id="apply-custom-3d-btn" class="btn-primary" style="white-space: nowrap; padding: 10px 18px; font-size: 0.85rem;">
+            Apply Live
+          </button>
+        </div>
+      </div>
+
+      <!-- Section B: Free AI 3D Generation Prompts -->
+      <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 1.5rem;">
+        <h4 style="color: #fff; font-size: 1.05rem;">Recommended Free AI Tools &amp; Prompts</h4>
+
+        <!-- Tool 1: Tripo3D / Meshy.ai -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <strong style="color: var(--accent-cyan); font-size: 0.92rem;">1. Tripo3D &amp; Meshy.ai (Free 3D Models)</strong>
+            <a href="https://www.tripo3d.ai/" target="_blank" style="color: #fff; font-size: 0.78rem; font-family: var(--font-mono); text-decoration: none; border-bottom: 1px solid var(--accent-cyan);">Open Tripo3D &rarr;</a>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 6px;">
+            <strong>Prompt to copy:</strong> <em>"3D cute stylized Pixar/Spline character avatar bust of an Indian male developer wearing a cap and modern dark hoodie, smiling, 3D render, octane render, smooth neon cyan and purple rim lighting, black background"</em>
+          </p>
+        </div>
+
+        <!-- Tool 2: Spline 3D -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <strong style="color: var(--accent-purple); font-size: 0.92rem;">2. Spline 3D (Interactive Web 3D)</strong>
+            <a href="https://spline.design/" target="_blank" style="color: #fff; font-size: 0.78rem; font-family: var(--font-mono); text-decoration: none; border-bottom: 1px solid var(--accent-purple);">Open Spline &rarr;</a>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">
+            <strong>Features:</strong> Built-in AI generation for 3D rooms, computers, keyboards, and spheres. Generates a free 1-click `<spline-viewer>` embed code you can drop right into your website!
+          </p>
+        </div>
+
+        <!-- Tool 3: Microsoft Designer / Bing Creator -->
+        <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); padding: 1rem;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+            <strong style="color: #10b981; font-size: 0.92rem;">3. Bing Image Creator (DALL-E 3 - 100% Free)</strong>
+            <a href="https://designer.microsoft.com/" target="_blank" style="color: #fff; font-size: 0.78rem; font-family: var(--font-mono); text-decoration: none; border-bottom: 1px solid #10b981);">Open Designer &rarr;</a>
+          </div>
+          <p style="font-size: 0.84rem; color: var(--text-secondary); line-height: 1.6;">
+            <strong>Prompt to copy:</strong> <em>"3D Pixar Disney style cute male computer science student avatar, smiling, wearing modern cap and hoodie, glowing neon purple and cyan ambient lighting, cinematic 3D render, octane render, dark background, 8k"</em>
+          </p>
+        </div>
+      </div>
+
+      <button class="btn-secondary" onclick="document.getElementById('ai-studio-modal').classList.remove('active'); document.body.style.overflow='auto';" style="width: 100%;">
+        Close AI Studio
+      </button>
+    </div>
+  </div>
+
+  <!-- 3. Project Details Modal -->
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" aria-label="Close dialog">&times;</button>
+      <h3 id="modal-project-title" style="font-family: var(--font-heading); font-size: 1.5rem; color: #fff; margin-bottom: 0.5rem;">
+        Project Title
+      </h3>
+      <div id="modal-project-tech" style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.82rem; margin-bottom: 1.25rem;">
+        Tech Stack
+      </div>
+      <p id="modal-project-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.8; margin-bottom: 1.8rem;">
+        Detailed project description.
+      </p>
+
+      <div style="display: flex; gap: 12px;">
+        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer" class="btn-primary" style="text-decoration: none;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/particles.js"></script>
+  <script src="js/tech-balls.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

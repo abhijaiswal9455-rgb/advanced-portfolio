@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Radial Glow -->
+    <radialGradient id="cyberGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#07070c" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Neon Gradients -->
+    <linearGradient id="neonCyanPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#d946ef"/>
+    </linearGradient>
+
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+
+    <linearGradient id="darkMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e2f"/>
+      <stop offset="50%" stop-color="#121220"/>
+      <stop offset="100%" stop-color="#090912"/>
+    </linearGradient>
+
+    <linearGradient id="glassShield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <filter id="glowEffect" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="intenseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="15" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Backdrop -->
+  <circle cx="250" cy="250" r="230" fill="url(#cyberGlow)"/>
+
+  <!-- Orbital Cyber Rings -->
+  <circle cx="250" cy="250" r="210" fill="none" stroke="#8b5cf6" stroke-width="1.5" stroke-dasharray="8 12" opacity="0.4">
+    <animateTransform attributeName="transform" type="rotate" from="0 250 250" to="360 250 250" dur="40s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="250" cy="250" r="185" fill="none" stroke="#00f0ff" stroke-width="2" stroke-dasharray="30 180" opacity="0.7" filter="url(#glowEffect)">
+    <animateTransform attributeName="transform" type="rotate" from="360 250 250" to="0 250 250" dur="20s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Hexagonal Tech Cage Frame -->
+  <polygon points="250,55 410,147 410,353 250,445 90,353 90,147" fill="#0d0d18" stroke="url(#neonCyanPurple)" stroke-width="2.5" opacity="0.85"/>
+  <polygon points="250,68 395,153 395,347 250,432 105,347 105,153" fill="none" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="6 6" opacity="0.3"/>
+
+  <!-- Developer Cyber Silhouette Group -->
+  <g id="developer-figure">
+    <!-- Cyber Torso / Hoodie -->
+    <path d="M160 410 C160 340, 190 310, 250 310 C310 310, 340 340, 340 410 L370 435 L130 435 Z" fill="url(#darkMetal)" stroke="#8b5cf6" stroke-width="1.5"/>
+    <path d="M210 325 L250 360 L290 325" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.8" filter="url(#glowEffect)"/>
+    <path d="M250 360 L250 425" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-dasharray="4 4" opacity="0.6"/>
+
+    <!-- Neck / Collar -->
+    <path d="M225 285 L225 315 L275 315 L275 285 Z" fill="#161628"/>
+
+    <!-- Head / Hair -->
+    <path d="M190 200 C190 145, 230 120, 250 120 C270 120, 310 145, 310 200 C310 245, 280 285, 250 285 C220 285, 190 245, 190 200 Z" fill="#18182a" stroke="#6366f1" stroke-width="1"/>
+    
+    <!-- Stylized Modern Cyber Hair -->
+    <path d="M185 190 C185 130, 220 115, 250 115 C285 115, 315 130, 315 185 C295 160, 275 165, 260 150 C245 165, 215 155, 185 190 Z" fill="#0b0b14"/>
+    <path d="M210 125 C235 115, 265 118, 285 135" fill="none" stroke="#00f0ff" stroke-width="2" opacity="0.6" filter="url(#glowEffect)"/>
+
+    <!-- Face Base -->
+    <path d="M205 185 C205 240, 225 270, 250 270 C275 270, 295 240, 295 185 Z" fill="#202038"/>
+
+    <!-- Futuristic Holographic Visor -->
+    <rect x="195" y="195" width="110" height="34" rx="10" fill="url(#glassShield)" filter="url(#glowEffect)"/>
+    <!-- Visor Glare / Scanning Line -->
+    <line x1="205" y1="212" x2="295" y2="212" stroke="#ffffff" stroke-width="2" opacity="0.9">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="200" y1="203" x2="230" y2="203" stroke="#00f0ff" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="288" cy="212" r="3" fill="#00f0ff" filter="url(#glowEffect)">
+      <animate attributeName="r" values="2;4;2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Cyber Headset / Audio Nodes -->
+    <rect x="180" y="192" width="16" height="38" rx="6" fill="#0e0e1a" stroke="#00f0ff" stroke-width="2"/>
+    <rect x="304" y="192" width="16" height="38" rx="6" fill="#0e0e1a" stroke="#8b5cf6" stroke-width="2"/>
+    <line x1="188" y1="185" x2="195" y2="155" stroke="#00f0ff" stroke-width="2"/>
+    <line x1="312" y1="185" x2="305" y2="155" stroke="#8b5cf6" stroke-width="2"/>
+    <path d="M195 155 C215 135, 285 135, 305 155" fill="none" stroke="#6366f1" stroke-width="2" opacity="0.8"/>
+  </g>
+
+  <!-- Floating Tech Badges / Holographic Orbits -->
+  <!-- C Badge -->
+  <g transform="translate(100, 160)">
+    <rect width="44" height="44" rx="10" fill="#121224" stroke="#00f0ff" stroke-width="1.5" filter="url(#glowEffect)"/>
+    <text x="22" y="29" font-family="'JetBrains Mono', monospace" font-size="20" font-weight="900" fill="#00f0ff" text-anchor="middle">C</text>
+  </g>
+
+  <!-- C++ Badge -->
+  <g transform="translate(355, 160)">
+    <rect width="52" height="44" rx="10" fill="#121224" stroke="#8b5cf6" stroke-width="1.5" filter="url(#glowEffect)"/>
+    <text x="26" y="28" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900" fill="#a855f7" text-anchor="middle">C++</text>
+  </g>
+
+  <!-- JS Badge -->
+  <g transform="translate(90, 310)">
+    <rect width="46" height="44" rx="10" fill="#121224" stroke="#eab308" stroke-width="1.5" opacity="0.9"/>
+    <text x="23" y="28" font-family="'JetBrains Mono', monospace" font-size="16" font-weight="900" fill="#facc15" text-anchor="middle">JS</text>
+  </g>
+
+  <!-- HTML/CSS Badge -->
+  <g transform="translate(355, 310)">
+    <rect width="52" height="44" rx="10" fill="#121224" stroke="#00f0ff" stroke-width="1.5" opacity="0.9"/>
+    <text x="26" y="27" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="800" fill="#38bdf8" text-anchor="middle">&lt;/&gt;</text>
+  </g>
+
+  <!-- Campus Status Pill -->
+  <g transform="translate(150, 440)">
+    <rect width="200" height="34" rx="17" fill="#0b0b14" stroke="#00f0ff" stroke-width="1.2" opacity="0.9"/>
+    <circle cx="168" cy="17" r="4" fill="#00f0ff" filter="url(#glowEffect)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="202" y="22" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="#f1f5f9" text-anchor="middle">BIET JHANSI • CSE</text>
+  </g>
+</svg>

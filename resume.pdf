@@ -1,0 +1,332 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Resources <<
+    /Font <<
+      /F1 4 0 R
+      /F2 5 0 R
+    >>
+  >>
+  /Contents 6 0 R
+>>
+endobj
+4 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+6 0 obj
+<<
+  /Length 2450
+>>
+stream
+q
+0 0 0 rg
+0.05 0.05 0.1 rg
+40 735 515 70 re f
+0 0.94 1 rg
+40 735 515 3 re f
+
+BT
+/F2 24 Tf
+1 1 1 rg
+55 770 Td
+(ABHISHEK CHAUDHARY) Tj
+ET
+
+BT
+/F1 11 Tf
+0 0.94 1 rg
+55 750 Td
+(B.Tech in Computer Science & Engineering | BIET Jhansi) Tj
+ET
+
+BT
+/F1 9 Tf
+0.8 0.8 0.8 rg
+55 720 Td
+(Location: Jhansi, UP, India  |  Email: abhishek.chaudhary@example.com  |  GitHub: github.com/your-username) Tj
+ET
+
+0.8 0.8 0.8 RG
+0.5 w
+40 710 m 555 710 l S
+
+BT
+/F2 13 Tf
+0.1 0.2 0.5 rg
+40 690 Td
+(EDUCATION) Tj
+ET
+
+0.1 0.2 0.5 RG
+1.5 w
+40 684 m 555 684 l S
+
+BT
+/F2 10.5 Tf
+0 0 0 rg
+40 668 Td
+(Bachelor of Technology (B.Tech) - Computer Science & Engineering) Tj
+ET
+
+BT
+/F1 9.5 Tf
+0.3 0.3 0.3 rg
+40 654 Td
+(Bundelkhand Institute of Engineering & Technology (BIET), Jhansi) Tj
+ET
+
+BT
+/F2 9.5 Tf
+0.2 0.2 0.2 rg
+475 668 Td
+(2023 - 2027) Tj
+ET
+
+BT
+/F1 8.5 Tf
+0.3 0.3 0.3 rg
+40 640 Td
+(Focus: Data Structures, Algorithms, Computer Architecture, Discrete Math, C/C++ Programming) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0 0 0 rg
+40 618 Td
+(Senior Secondary (Class XII) - Science (PCM)) Tj
+ET
+
+BT
+/F1 9.5 Tf
+0.3 0.3 0.3 rg
+40 604 Td
+(Higher Secondary School Placeholder) Tj
+ET
+
+BT
+/F2 9.5 Tf
+0.2 0.2 0.2 rg
+475 618 Td
+(Completed) Tj
+ET
+
+BT
+/F2 13 Tf
+0.1 0.2 0.5 rg
+40 575 Td
+(TECHNICAL SKILLS) Tj
+ET
+
+0.1 0.2 0.5 RG
+1.5 w
+40 569 m 555 569 l S
+
+BT
+/F2 9.5 Tf
+0 0 0 rg
+40 552 Td
+(Programming Languages:) Tj
+ET
+BT
+/F1 9.5 Tf
+0.2 0.2 0.2 rg
+170 552 Td
+(C (Proficient / Core), C++ (Learning / OOP), JavaScript (ES6+)) Tj
+ET
+
+BT
+/F2 9.5 Tf
+0 0 0 rg
+40 535 Td
+(Web Technologies:) Tj
+ET
+BT
+/F1 9.5 Tf
+0.2 0.2 0.2 rg
+170 535 Td
+(HTML5 (Semantic), CSS3 (Grid, Flexbox, Animations), DOM APIs) Tj
+ET
+
+BT
+/F2 9.5 Tf
+0 0 0 rg
+40 518 Td
+(Core CS Foundations:) Tj
+ET
+BT
+/F1 9.5 Tf
+0.2 0.2 0.2 rg
+170 518 Td
+(Data Structures & Algorithms, Object-Oriented Programming, Memory Management) Tj
+ET
+
+BT
+/F2 9.5 Tf
+0 0 0 rg
+40 501 Td
+(Tools & Platforms:) Tj
+ET
+BT
+/F1 9.5 Tf
+0.2 0.2 0.2 rg
+170 501 Td
+(Git, GitHub, Visual Studio Code, GCC Compiler, Web Storage API) Tj
+ET
+
+BT
+/F2 13 Tf
+0.1 0.2 0.5 rg
+40 472 Td
+(FEATURED PROJECTS) Tj
+ET
+
+0.1 0.2 0.5 RG
+1.5 w
+40 466 m 555 466 l S
+
+BT
+/F2 10.5 Tf
+0 0 0 rg
+40 450 Td
+(Interactive Sorting & Search Visualizer) Tj
+ET
+BT
+/F1 9 Tf
+0.4 0.4 0.4 rg
+440 450 Td
+(JavaScript, Canvas, CSS) Tj
+ET
+BT
+/F1 8.5 Tf
+0.25 0.25 0.25 rg
+40 436 Td
+(- Dynamic web application illustrating Bubble, Selection, Insertion, and Quick Sort algorithms in real time.) Tj
+ET
+BT
+/F1 8.5 Tf
+0.25 0.25 0.25 rg
+40 424 Td
+(- Features step-by-step playback, customizable speed, comparison metrics, and responsive canvas UI.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0 0 0 rg
+40 400 Td
+(C-Based Record Management & File Utility) Tj
+ET
+BT
+/F1 9 Tf
+0.4 0.4 0.4 rg
+440 400 Td
+(C Language, Binary File I/O) Tj
+ET
+BT
+/F1 8.5 Tf
+0.25 0.25 0.25 rg
+40 386 Td
+(- Robust CLI program engineered in C using dynamic memory allocation and structs for record indexing.) Tj
+ET
+BT
+/F1 8.5 Tf
+0.25 0.25 0.25 rg
+40 374 Td
+(- Integrated persistent binary file streams with strict memory leak prevention and validation.) Tj
+ET
+
+BT
+/F2 10.5 Tf
+0 0 0 rg
+40 350 Td
+(Student Workflow & Task Matrix) Tj
+ET
+BT
+/F1 9 Tf
+0.4 0.4 0.4 rg
+440 350 Td
+(JavaScript, Web Storage) Tj
+ET
+BT
+/F1 8.5 Tf
+0.25 0.25 0.25 rg
+40 336 Td
+(- Lightweight productivity dashboard with category filtering and persistent local browser storage.) Tj
+ET
+
+BT
+/F2 13 Tf
+0.1 0.2 0.5 rg
+40 307 Td
+(ACADEMIC & CODING ACHIEVEMENTS) Tj
+ET
+
+0.1 0.2 0.5 RG
+1.5 w
+40 301 m 555 301 l S
+
+BT
+/F1 8.8 Tf
+0.25 0.25 0.25 rg
+40 285 Td
+(- Admitted to B.Tech Computer Science & Engineering at BIET Jhansi (Autonomous Govt. College).) Tj
+ET
+BT
+/F1 8.8 Tf
+0.25 0.25 0.25 rg
+40 270 Td
+(- Active problem solving on competitive platforms: LeetCode and HackerRank practicing DSA fundamentals.) Tj
+ET
+BT
+/F1 8.8 Tf
+0.25 0.25 0.25 rg
+40 255 Td
+(- Participant in college coding challenges, tech festivals, and CSE departmental hackathons.) Tj
+ET
+Q
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000068 00000 n 
+0000000125 00000 n 
+0000000282 00000 n 
+0000000355 00000 n 
+0000000433 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+2935
+%%EOF

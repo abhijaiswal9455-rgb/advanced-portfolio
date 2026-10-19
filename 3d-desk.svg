@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="deskTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1e32"/>
+      <stop offset="100%" stop-color="#10101c"/>
+    </linearGradient>
+    <linearGradient id="screenGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="neonCyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <radialGradient id="workstationGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#05050a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Ambient Glow -->
+  <circle cx="300" cy="260" r="230" fill="url(#workstationGlow)"/>
+
+  <!-- Isometric Floor Grid Lines -->
+  <g opacity="0.25" stroke="#8b5cf6" stroke-width="1">
+    <line x1="80" y1="360" x2="300" y2="470"/>
+    <line x1="300" y1="470" x2="520" y2="360"/>
+    <line x1="140" y1="330" x2="300" y2="410"/>
+    <line x1="300" y1="410" x2="460" y2="330"/>
+    <line x1="200" y1="300" x2="300" y2="350"/>
+    <line x1="300" y1="350" x2="400" y2="300"/>
+  </g>
+
+  <!-- Modern Ergonomic Developer Chair -->
+  <g id="chair">
+    <!-- Base wheels -->
+    <ellipse cx="230" cy="430" rx="45" ry="16" fill="#0b0b14" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="230" y1="430" x2="230" y2="380" stroke="#33334d" stroke-width="6"/>
+    <!-- Seat cushion -->
+    <path d="M190 370 Q230 380 270 370 L265 355 Q230 365 195 355 Z" fill="#18182c" stroke="#00f0ff" stroke-width="1"/>
+    <!-- Backrest -->
+    <path d="M185 355 L190 250 Q230 240 270 250 L275 355 Z" fill="#141424" stroke="#8b5cf6" stroke-width="1.5"/>
+    <line x1="200" y1="290" x2="260" y2="290" stroke="#00f0ff" stroke-width="2" opacity="0.6" filter="url(#glow)"/>
+  </g>
+
+  <!-- 3D Developer Sitting at Desk -->
+  <g id="developer-figure">
+    <!-- Body / Dark hoodie with neon strip -->
+    <path d="M205 355 C200 300, 215 270, 245 270 C275 270, 290 300, 285 355 Z" fill="#1c1c30"/>
+    <path d="M245 280 L245 340" stroke="#00f0ff" stroke-width="2" opacity="0.8"/>
+    <!-- Head & Cap -->
+    <circle cx="245" cy="235" r="22" fill="#2d2d48"/>
+    <!-- Backward / Forward Cap -->
+    <path d="M222 228 C222 212, 268 212, 268 228 L278 232 L220 232 Z" fill="#0b0b14" stroke="#8b5cf6" stroke-width="1"/>
+    <!-- Arms reaching forward to keyboard -->
+    <path d="M215 310 L260 325 L290 325" fill="none" stroke="#25253d" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Glowing wristband -->
+    <circle cx="270" cy="325" r="3" fill="#00f0ff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Futuristic Minimalist Desk -->
+  <g id="desk">
+    <!-- Desk surface isometric -->
+    <polygon points="260,335 480,310 520,345 300,375" fill="url(#deskTop)" stroke="#00f0ff" stroke-width="1.5"/>
+    <!-- Desk edge neon glow -->
+    <line x1="300" y1="375" x2="520" y2="345" stroke="#00f0ff" stroke-width="2" filter="url(#glow)"/>
+    <line x1="260" y1="335" x2="300" y2="375" stroke="#8b5cf6" stroke-width="1.5"/>
+    <!-- Desk legs -->
+    <line x1="300" y1="375" x2="300" y2="455" stroke="#1f1f35" stroke-width="5"/>
+    <line x1="520" y1="345" x2="520" y2="425" stroke="#1a1a2e" stroke-width="5"/>
+    <line x1="480" y1="310" x2="480" y2="390" stroke="#121222" stroke-width="4"/>
+  </g>
+
+  <!-- Glowing Curved Ultrawide Monitor -->
+  <g id="ultrawide-monitor">
+    <!-- Monitor Stand -->
+    <polygon points="410,328 440,325 435,275 420,275" fill="#0d0d18" stroke="#8b5cf6" stroke-width="1"/>
+    <!-- Monitor Bezel -->
+    <path d="M340 215 C390 205, 460 210, 510 225 L505 285 C460 270, 390 265, 340 275 Z" fill="#090912" stroke="#8b5cf6" stroke-width="2"/>
+    <!-- Glowing Curved Screen Display -->
+    <path d="M346 220 C392 212, 458 216, 502 230 L498 280 C458 266, 392 262, 346 270 Z" fill="url(#screenGlow)" opacity="0.9" filter="url(#glow)"/>
+    
+    <!-- Code Lines / Terminal UI on Screen -->
+    <g opacity="0.9" stroke="#ffffff" stroke-width="1.8">
+      <line x1="358" y1="232" x2="410" y2="228"/>
+      <line x1="365" y1="240" x2="445" y2="236"/>
+      <line x1="375" y1="248" x2="430" y2="245"/>
+      <line x1="365" y1="256" x2="460" y2="252"/>
+      <line x1="358" y1="264" x2="420" y2="260"/>
+    </g>
+
+    <!-- Neon Screen Ambient Light Cone radiating onto desk & developer -->
+    <polygon points="346,270 502,230 460,340 320,350" fill="url(#neonCyan)" opacity="0.12"/>
+  </g>
+
+  <!-- RGB Mechanical Keyboard -->
+  <g id="keyboard">
+    <polygon points="325,348 395,338 405,350 335,360" fill="#121220" stroke="#ec4899" stroke-width="1"/>
+    <line x1="332" y1="354" x2="398" y2="344" stroke="#00f0ff" stroke-width="2" opacity="0.8" filter="url(#glow)"/>
+  </g>
+
+  <!-- Vertical Neon Desk Lamp / Cyber Rod -->
+  <g id="cyber-lamp">
+    <line x1="495" y1="250" x2="495" y2="320" stroke="#00f0ff" stroke-width="3" filter="url(#glow)"/>
+    <circle cx="495" cy="250" r="5" fill="#ffffff" filter="url(#glow)"/>
+  </g>
+
+  <!-- Floating Hologram / Code Snippets -->
+  <g transform="translate(130, 150)" opacity="0.85">
+    <rect width="110" height="50" rx="8" fill="#0d0d18" stroke="#8b5cf6" stroke-width="1.2" opacity="0.8"/>
+    <text x="12" y="22" font-family="'JetBrains Mono', monospace" font-size="11" fill="#00f0ff">&lt;dev&gt; BIET</text>
+    <text x="12" y="38" font-family="'JetBrains Mono', monospace" font-size="10" fill="#a855f7">CSE :: 2026</text>
+    <circle cx="95" cy="25" r="4" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Floating Holographic Hexagon -->
+  <g transform="translate(480, 130)" opacity="0.75">
+    <polygon points="30,0 60,17 60,51 30,68 0,51 0,17" fill="none" stroke="#00f0ff" stroke-width="1.5" stroke-dasharray="6 4">
+      <animateTransform attributeName="transform" type="rotate" from="0 30 34" to="360 30 34" dur="25s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="30" y="38" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="bold" fill="#00f0ff" text-anchor="middle">C++</text>
+  </g>
+</svg>
